@@ -31,6 +31,10 @@ EOF
 
   }
   force_destroy = true
+
+  tags {
+    public_bucket = true
+  }
 }
 
 resource "aws_s3_bucket_object" "webapp" {
